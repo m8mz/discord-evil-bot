@@ -1,0 +1,13 @@
+services:
+  rick-bot:
+    image: ghcr.io/m8mz/discord-evil-bot:latest
+    restart: always
+    env_file:
+      - .env
+    # volumes:
+    #   - ./data:/app/data
+    healthcheck:
+      test: ["CMD", "node", "healthcheck.js"]
+      interval: 1m
+      timeout: 5s
+      retries: 3

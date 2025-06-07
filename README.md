@@ -9,19 +9,12 @@ The bot is used to manage the Evilist Discord Channel.
 Create `.env` environment file.
 
 ```sh
-X_API_KEY=''
-```
+APP_ID=
+DISCORD_TOKEN=
+GUILD_ID=
+X_API_KEY=
 
-Create `config.json` with Discord credentials.
-
-```json
-{
-  "token": "",
-  "clientId": "",
-  "guildId": ""
-}
 ```
 
 ## Deployment
 
-PODMAN

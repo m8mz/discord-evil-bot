@@ -18,3 +18,9 @@ X_API_KEY=
 
 ## Deployment
 
+Github Repo Registry
+
+```sh
+podman pull ghcr.io/m8mz/discord-evil-bot:latest
+./start.sh
+```

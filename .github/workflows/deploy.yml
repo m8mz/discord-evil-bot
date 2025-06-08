@@ -3,6 +3,14 @@ name: Build & Push Discord-Bot Imaage
 on:
   push:
     branches: [main]
+    paths:
+      - "src/**"
+      - Dockerfile
+      - package.json
+    pull_request:
+      - "src/**"
+      - Dockerfile
+      - package.json
   workflow_dispatch:
 
 env:

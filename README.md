@@ -1,10 +1,33 @@
 # Discord Evil Bot
 
+[![Build & Push](https://github.com/m8mz/discord-evil-bot/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/m8mz/discord-evil-bot/actions/workflows/deploy.yml)
+![GHCR](https://img.shields.io/badge/registry-ghcr.io%2Fm8mz%2Fdiscord--evil--bot-blue?logo=docker)
+
 ## Description
 
-The bot is used to manage the Evilist Discord Channel.
+😈 Meet Evil Bot – Your Server’s Mischievous Swiss‑Army Knife
+
+Evil Bot is a full‑stack Discord automation suite I built to streamline community management and enrich user engagement in a brand new tech server.
+
+#### Tech Stack
+
+#### TODO:
+
+- [ ] Webhook service on VPS that will automatically deploy a new bot when triggered.
+- [ ] Add a key/value store for caching/tracking/ratelimiting purposes.
+- [ ] Todo list to manage an upcoming feature list for the discord bot to be managed through the channel.
+
 
 ## Requirements
+
+Server requirements:
+
+```sh
+dnf install podman podman-docker
+useradd -m bot
+loginctl enable-linger <ID>  # bot user id
+su - bot
+```
 
 Create `.env` environment file.
 
@@ -21,10 +44,6 @@ X_API_KEY=
 1. **CI builds & pushes** a container image on every push to `main`.
 2. The image is published to **GitHub Container Registry (GHCR)**.
 3. The VPS **pulls and runs** that image in a single, root‑less container.
-
-#### TODO:
-
-- [ ] Webhook service on VPS that will automatically deploy a new bot when triggered.
 
 ---
 

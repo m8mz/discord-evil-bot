@@ -1,4 +1,4 @@
-name: Build & Push Discord-Bot Imaage
+name: Discord-Bot Docker Image
 
 on:
   push:

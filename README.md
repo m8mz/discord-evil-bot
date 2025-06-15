@@ -1,7 +1,6 @@
 # Discord Evil Bot
 
 [![Build & Push](https://github.com/m8mz/discord-evil-bot/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/m8mz/discord-evil-bot/actions/workflows/deploy.yml)
-
 ![GHCR](https://img.shields.io/badge/registry-ghcr.io%2Fm8mz%2Fdiscord--evil--bot-blue?logo=docker)
 
 ## Description

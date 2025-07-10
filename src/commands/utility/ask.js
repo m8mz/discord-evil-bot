@@ -70,7 +70,7 @@ module.exports = {
       baseURL: "https://api.x.ai/v1",
     });
     const completion = await client.chat.completions.create({
-      model: "grok-3-latest",
+      model: "grok-4-latest",
       messages: [
         {
           role: "system",
